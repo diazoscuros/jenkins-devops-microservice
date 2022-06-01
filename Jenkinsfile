@@ -1,7 +1,9 @@
 //DECLARATIVE
 pipeline {
 	//agent any
-	agent { docker{ image 'maven:3.8.5-jdk-11-slim'} }
+	agent { 
+		docker { image 'maven:3.8.5-jdk-11-slim'} 
+	}
 	stages{
 		stage('Build') {
 			steps{
